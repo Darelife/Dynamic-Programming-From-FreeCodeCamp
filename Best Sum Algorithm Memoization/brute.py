@@ -84,3 +84,7 @@ def bestSum2(targetSum, numbers):
     return shortestCombination
 
 print(bestSum2(7, [5,3,4,7]))
+
+
+#both sols have similar solutions...ig it's cuz of github copilot...i tried not to read the code it 
+# gave me, but for some sols, it literally wrote what i was abt to write...so i just used it
