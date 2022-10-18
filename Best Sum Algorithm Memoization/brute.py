@@ -57,14 +57,14 @@ def bestSum(targetSum, numbers):
         remainder = targetSum - num
         remainderResult = bestSum(remainder, numbers)
         if remainderResult is not None:
-            remainderResult.append(num)
+            remainderResult = remainderResult + [num]
             if shortestCombination is None or len(shortestCombination)>len(remainderResult):
                 shortestCombination = remainderResult
 
     return shortestCombination #return is outside loop cuz we need to make sure that it's the shortest 
     #combination that we return and not just the first combination that we find
 
-print(bestSum(7, [5,3,4,9]))
+print(bestSum(7, [5,3,4,7]))
 
 
 
